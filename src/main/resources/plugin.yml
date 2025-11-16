@@ -1,0 +1,6 @@
+name: TutorialLib
+version: '0.1'
+main: me.Mikzyy.tutorialLib.TutorialLib
+api-version: '1.21'
+authors: [ Mikzyy_ ]
+description: Joku plugin
