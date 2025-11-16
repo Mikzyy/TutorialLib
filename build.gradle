@@ -51,21 +51,3 @@ processResources {
         expand props
     }
 }
-
-publishing {
-    publications {
-        gpr(MavenPublication) {
-            from components.java
-        }
-    }
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/Mikzyy/TutorialLib")
-            credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.token") ?: System.getenv("TOKEN")
-            }
-        }
-    }
-}
